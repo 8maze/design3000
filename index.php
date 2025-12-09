@@ -14,7 +14,11 @@
     <?php
 
     include 'navbar.html';
-    include 'content.html';
+
+    include 'textbox.html';
+    include 'productcards.html';
+    include 'bildtext.html';
+
     include 'footer.html';
 
     ?>
