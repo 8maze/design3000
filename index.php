@@ -17,12 +17,11 @@
 
     include 'navbar.html';
 
-    include '4productcards.html';
     include 'textbox.html';
     include 'productcards.html';
     include 'bildtext.html';
     include 'form.html';
-
+    include 'detail.html';
     include 'footer.html';
 
     ?>
