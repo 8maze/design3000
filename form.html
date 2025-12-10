@@ -1,27 +1,36 @@
-<!-----Formular---->
-<div class="container mt-3">
+<div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <form>
+            <form class="needs-validation" novalidate>
+                
                 <div class="mb-3">
                     <label for="form-select" class="form-label">Anrede</label>
                     <select class="form-select" id="form-select" name="anrede" required>
-                        <option value="">Bitte wählen</option>
+                        <option value="" selected disabled>Bitte wählen</option>
                         <option value="herr">Herr</option>
                         <option value="frau">Frau</option>
                         <option value="divers">Divers</option>
                     </select>
+                    <div class="invalid-feedback">
+                        Bitte wählen Sie eine Anrede aus.
+                    </div>
                 </div>
 
                 <div class="mb-3">
                     <label for="form_fld_name" class="form-label">Name</label>
                     <input type="text" class="form-control" id="form_fld_name" name="name" required>
+                    <div class="invalid-feedback">
+                        Bitte geben Sie Ihren Namen ein.
+                    </div>
                 </div>
 
                 <div class="mb-3">
                     <label for="form_fld_email" class="form-label">E-Mail-Adresse</label>
                     <input type="email" class="form-control" id="form_fld_email" name="email" required>
                     <div class="form-text">Ihre E-Mail-Adresse wird nicht weitergegeben.</div>
+                    <div class="invalid-feedback">
+                        Bitte geben Sie eine gültige E-Mail-Adresse ein.
+                    </div>
                 </div>
                 
                 <div class="mb-3">
@@ -31,21 +40,25 @@
 
                 <div class="mb-3">
                     <label for="form_fld_nachricht" class="form-label">Nachricht</label>
-                    <textarea class="form-control" id="form_fld_nachricht" name="nachricht" rows="5"
-                        required></textarea>
+                    <textarea class="form-control" id="form_fld_nachricht" name="nachricht" rows="5" required></textarea>
+                    <div class="invalid-feedback">
+                        Bitte geben Sie eine Nachricht ein.
+                    </div>
                 </div>
 
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="form_fld_checkbox" name="datenschutz" required>
                     <label class="form-check-label" for="form_fld_checkbox">
-                        Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und
-                        akzeptiert.
+                        Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und akzeptiert.
                     </label>
+                    <div class="invalid-feedback">
+                        Dies muss bestätigt werden.
+                    </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Absenden</button>
+                <button type="submit" class="btn btn-primary">Absenden (Visuelle Prüfung)</button>
             </form>
         </div>
     </div>
 </div>
-<!-----/Formular---->
+<script src="/assets/js/formscript.js"> </script>
