@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./assets/css/bootstrap1.min.css" /> 
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" /> 
     <script src="./assets/js/feather.min.js"></script>
     
 </head>
@@ -21,6 +21,7 @@
     include 'textbox.html';
     include 'productcards.html';
     include 'bildtext.html';
+    include 'form.html';
 
     include 'footer.html';
 
